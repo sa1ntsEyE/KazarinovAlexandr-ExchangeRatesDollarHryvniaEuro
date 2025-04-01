@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обмін валют</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Обмін валют</h1>
+    </header>
+
+    <section class="rates">
+        <div class="rate">
+            <p>Курс долара: <span id="usd-rate">...</span> грн</p>
+        </div>
+        <div class="rate">
+            <p>Курс євро: <span id="eur-rate">...</span> грн</p>
+        </div>
+    </section>
+
+    <section class="converter">
+        <h2>Конвертація</h2>
+        <div class="converter-inputs">
+            <input type="number" id="amount" placeholder="Сума" aria-label="Введіть суму для конвертації">
+            <select id="currency" aria-label="Оберіть валюту">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <button class="btn convert-btn" onclick="convertCurrency()">Конвертувати</button>
+        </div>
+        <h3>Результат: <span id="result">...</span> грн</h3>
+    </section>
+
+    <section class="download">
+        <button class="btn download-btn" onclick="downloadExcel()">Скачати звіт</button>
+    </section>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>

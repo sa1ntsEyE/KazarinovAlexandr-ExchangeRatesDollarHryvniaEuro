@@ -1,0 +1,5 @@
+com\example\Currencies\service\ExcelService.class
+com\example\Currencies\model\ExchangeRate.class
+com\example\Currencies\CurrenciesApplication.class
+com\example\Currencies\service\ExchangeRateService.class
+com\example\Currencies\controller\ExchangeController.class
